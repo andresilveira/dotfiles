@@ -14,8 +14,11 @@ Plugin 'VundleVim/Vundle.vim'
 " Nice color scheme
 Plugin 'altercation/vim-colors-solarized'
 
-"File navigator Ctrl-p
+" File navigator Ctrl-p
 Plugin 'kien/ctrlp.vim'
+
+" Better javascript syntax
+Plugin 'pangloss/vim-javascript'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -37,3 +40,9 @@ filetype plugin indent on    " required
 syntax enable
 set background=dark
 colorscheme solarized
+
+" Enables using backspace over everything in insert mode
+set backspace=indent,eol,start
+
+" Show line numbers
+set number

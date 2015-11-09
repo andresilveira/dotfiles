@@ -7,4 +7,7 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - ["ruby -e '$(curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/master/install)'", Installing Homebrew]
+  - [brew install zsh, Installing zsh]
+  - ["sh -c '$(curl -fsSL 'https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'", Installing oh-my-zsh]
   - [vim +PluginInstall +qall, Installing Vundle Plugins]

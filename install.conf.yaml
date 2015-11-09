@@ -4,6 +4,7 @@
     ~/.dotfiles: ''
     ~/.vim: vim/
     ~/.vimrc: vimrc
+    ~/.gemrc: gemrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

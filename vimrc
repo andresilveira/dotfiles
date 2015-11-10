@@ -1,4 +1,10 @@
+scriptencoding utf-8
+set encoding=utf-8
+
+" something about the system wide .vimrc and user .vimrc
 set nocompatible
+
+" just disables the filetype recognition/indentation by the time
 filetype off
 
 " set the runtime path to include Vundle and initialize
@@ -24,18 +30,6 @@ Plugin 'pangloss/vim-javascript'
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-
 " Enabling solarized
 syntax enable
 set background=dark
@@ -46,3 +40,49 @@ set backspace=indent,eol,start
 
 " Show line numbers
 set number
+
+" sets tabs to use space character and uses 2 chars as tab size
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set expandtab
+
+" maps some special characters
+set listchars=eol:¬,tab:»»,trail:•
+
+" show the commands in the bottom right
+set showcmd
+
+" changes the <leader> key to ,
+let mapleader=","
+
+" maps jj as <ESC>
+inoremap jj <ESC>
+
+" short cuts for life
+map <leader>w :w<CR>
+map <leader>e :e
+
+" list! shows special characters
+nnoremap <leader>. :set list!<CR>
+
+" add a newline after the current line
+nmap <CR> o<Esc>
+
+" map the switch slipts commands
+noremap <C-J> <C-W><C-J>
+noremap <C-K> <C-W><C-K>
+noremap <C-L> <C-W><C-L>
+noremap <C-H> <C-W><C-H>
+
+" open splits on right and below which feels more natural
+set splitbelow
+set splitright
+
+" auto remove trailing spaces
+" autocmd BufWritePre * :%s/\s\+$//e
+
+" allows me to specify some custom commands on per directory
+if filereadable(".vim.custom")
+  so .vim.custom
+endif

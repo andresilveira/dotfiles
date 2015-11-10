@@ -2,18 +2,21 @@
 
 - link:
     ~/.dotfiles: ''
+    ~/.zhsrc: zhsrc
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.gemrc: gemrc
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - ["ruby -e '$(curl -fsSL 'https://raw.githubusercontent.com/Homebrew/install/master/install)'", Installing Homebrew]
+  - ['ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"', Installing Homebrew]
+  - [brew install caskroom/cask/brew-cask, Installing Brew Cask]
+  - [brew cask install iterm2]
   - [brew install zsh, Installing zsh]
   - [brew install vim, Installing Vim via Homebrew]
   - [brew install npm, Installing NPM]
   - [brew install tmux, Installing Tmux]
-  - ["sh -c '$(curl -fsSL 'https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'", Installing oh-my-zsh]
+  - ['sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', Installing oh-my-zsh]
   - [vim +PluginInstall +qall, Installing Vundle Plugins]
   - [npm install -g eslint-config-airbnb, Installing ESlint npm module]
   - [npm install -g eslint]

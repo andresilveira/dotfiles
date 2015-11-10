@@ -86,3 +86,7 @@ set splitright
 if filereadable(".vim.custom")
   so .vim.custom
 endif
+
+" for some reason vim by default don't allow you to erase
+" stuff that were not added in the present session of the file
+set backspace=indent,eol,start

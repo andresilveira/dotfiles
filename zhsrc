@@ -1,6 +1,0 @@
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-export PGDATA="/usr/local/var/postgres"
-
-alias tmux="TERM=screen-256color-bce tmux -2"
-alias dev="cd ~/development"
-alias ls="ls -lha"

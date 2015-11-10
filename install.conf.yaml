@@ -2,7 +2,7 @@
 
 - link:
     ~/.dotfiles: ''
-    ~/.zhsrc: zhsrc
+    ~/.zshrc: zshrc
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.gemrc: gemrc

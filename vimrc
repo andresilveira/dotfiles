@@ -23,8 +23,8 @@ Plugin 'altercation/vim-colors-solarized'
 " File navigator Ctrl-p
 Plugin 'kien/ctrlp.vim'
 
-" Better javascript syntax
-Plugin 'pangloss/vim-javascript'
+" multiple cursors
+Plugin 'terryma/vim-multiple-cursors'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

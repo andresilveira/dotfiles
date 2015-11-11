@@ -16,6 +16,7 @@
   - [brew install vim, Installing Vim via Homebrew]
   - [brew install npm, Installing NPM]
   - [brew install tmux, Installing Tmux]
+  - [brew cask install gitx, Installing GitX]
   - ['sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', Installing oh-my-zsh]
   - [vim +PluginInstall +qall, Installing Vundle Plugins]
   - [npm install -g eslint-config-airbnb, Installing ESlint npm module]

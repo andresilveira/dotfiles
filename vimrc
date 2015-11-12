@@ -26,6 +26,15 @@ Plugin 'kien/ctrlp.vim'
 " multiple cursors
 Plugin 'terryma/vim-multiple-cursors'
 
+" handlebars/mustache syntax highlighting
+Plugin 'mustache/vim-mustache-handlebars'
+
+" Eaiser code commenting
+Plugin 'tpope/vim-commentary'
+
+" [Un]Surround stuff with text
+Plugin 'tpope/vim-surround'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -57,7 +66,7 @@ set showcmd
 let mapleader=","
 
 " maps jj as <ESC>
-inoremap jj <ESC>
+imap jj <ESC>
 
 " short cuts for life
 map <leader>w :w<CR>
@@ -90,3 +99,10 @@ endif
 " for some reason vim by default don't allow you to erase
 " stuff that were not added in the present session of the file
 set backspace=indent,eol,start
+
+" ignores some folders including node_modules
+" useful when using the ctrl-p plugin to not have unrelated files in the three
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
+
+" Enables mustache/handlebars abbreviations
+let g:mustache_abbreviations = 1

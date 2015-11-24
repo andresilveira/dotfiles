@@ -44,9 +44,6 @@ syntax enable
 set background=dark
 colorscheme solarized
 
-" Enables using backspace over everything in insert mode
-set backspace=indent,eol,start
-
 " Show line numbers
 set number
 
@@ -68,15 +65,16 @@ let mapleader=","
 " maps jj as <ESC>
 imap jj <ESC>
 
-" short cuts for life
-map <leader>w :w<CR>
-map <leader>e :e
+" shortcuts for life
+nmap <leader>w :w<CR>
+nmap <leader>e :e<SPACE>
+
+" a shortcut for greping through the project.
+" the <Left> thing moves the cursor to inside the quotes
+nmap <leader>f :grep -R -F '' .<Left><Left><Left>
 
 " list! shows special characters
 nnoremap <leader>. :set list!<CR>
-
-" add a newline after the current line
-nmap <CR> o<Esc>
 
 " map the switch slipts commands
 noremap <C-J> <C-W><C-J>

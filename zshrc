@@ -55,7 +55,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="$PATH:$HOME/.rbenv/bin:/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -66,8 +66,7 @@ source $ZSH/oh-my-zsh.sh
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
 # else
-#   export EDITOR='mvim'
-# fi
+#   export EDITOR='mvim# fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"

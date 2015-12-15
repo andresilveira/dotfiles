@@ -35,6 +35,9 @@ Plugin 'tpope/vim-commentary'
 " [Un]Surround stuff with text
 Plugin 'tpope/vim-surround'
 
+" Syntatic checks platform
+Plugin 'scrooloose/syntastic'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -104,3 +107,16 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 
 " Enables mustache/handlebars abbreviations
 let g:mustache_abbreviations = 1
+
+" Syntastic default settings
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" Enabling syntastic checkers
+let g:syntastic_javascript_checkers = ['eslint']

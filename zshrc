@@ -56,8 +56,11 @@ plugins=(git)
 # User configuration
 
 export PATH="$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PGDATA="/usr/local/var/postgres"
 
 source $ZSH/oh-my-zsh.sh
+source $HOME/.aliases
+[[ -f $HOME/.aws/credentials ]] && source ~/.aws/credentials
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -82,6 +85,3 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
-export PGDATA="/usr/local/var/postgres"
-source ~/.aws/credentials

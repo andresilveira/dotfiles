@@ -8,6 +8,7 @@
     ~/.gemrc: gemrc
     ~/.tmux.conf: tmux.conf
     ~/.gitignore_global: gitignore_global
+    ~/.aliases: aliases
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
@@ -22,8 +23,6 @@
   - [brew cask install gitx, Installing GitX]
   - ['sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', Installing oh-my-zsh]
   - [vim +PluginInstall +qall, Installing Vundle Plugins]
-  - [npm install -g eslint-config-airbnb, Installing ESlint npm module]
-  - [npm install -g eslint]
+  - [npm install -g eslint Installing ESlint npm module]
   - [npm install -g babel-eslint]
-  - [npm install -g eslint-plugin-react]
   - [git config --global core.excludesfile ~/.gitignore_global, Add global gitignore file]

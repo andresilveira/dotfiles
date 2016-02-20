@@ -55,7 +55,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
+export PATH="$PATH:$HOME/.rvm/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin"
 export PGDATA="/usr/local/var/postgres"
 
 source $ZSH/oh-my-zsh.sh

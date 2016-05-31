@@ -66,6 +66,7 @@ set listchars=eol:¬,tab:»»,trail:•
 set showcmd
 
 " settings for statusline
+set laststatus=2                " tells vim to always draw the statusline
 set statusline=                 " resets statusline when sourcing .vimrc
 set statusline+=%#error#%r%*    " sets the read only flag with the error color
 set statusline+=%m\             " show modified file flag
@@ -83,6 +84,9 @@ imap jj <ESC>
 " shortcuts for life
 nmap <leader>w :w<CR>
 nmap <leader>e :e<SPACE>
+
+nnoremap tn :tabnext<CR>
+nnoremap tp :tabprevious<CR>
 
 " a shortcut for greping through the project.
 " the <Left> thing moves the cursor to inside the quotes

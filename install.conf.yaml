@@ -5,6 +5,7 @@
     ~/.zshrc: zshrc
     ~/.vim: vim/
     ~/.vimrc: vimrc
+    ~/.racketrc: racketrc
     ~/.gemrc: gemrc
     ~/.tmux.conf: tmux.conf
     ~/.gitignore_global: gitignore_global
@@ -16,6 +17,7 @@
   - [brew install caskroom/cask/brew-cask, Installing Brew Cask]
   - [brew cask install iterm2]
   - [brew cask install github-desktop]
+  - [brew cask install racket]
   - [brew install zsh, Installing zsh]
   - [brew install vim, Installing Vim via Homebrew]
   - [brew install npm, Installing NPM]

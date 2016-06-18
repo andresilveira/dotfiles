@@ -41,6 +41,9 @@ Plugin 'scrooloose/syntastic'
 " completion stuff
 Plugin 'Shougo/neocomplete.vim'
 
+" Emmet HTML/CSS abbreviations for vim
+Plugin 'mattn/emmet-vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required

@@ -71,6 +71,8 @@ set showcmd
 " settings for statusline
 set laststatus=2                " tells vim to always draw the statusline
 set statusline=                 " resets statusline when sourcing .vimrc
+set statusline+=%#warningmsg#   " Syntastic statusline warnings
+set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%#error#%r%*    " sets the read only flag with the error color
 set statusline+=%m\             " show modified file flag
 set statusline+=%f\             " show file name
@@ -123,15 +125,13 @@ set backspace=indent,eol,start
 " ignores some folders including node_modules
 " useful when using the ctrl-p plugin to not have unrelated files in the three
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
+" Clear CtrlP cache with cc (the same as F5, just easier)
+map cc :CtrlPClearCache<ENTER>
 
 " Enables mustache/handlebars abbreviations
 let g:mustache_abbreviations = 1
 
 " Syntastic default settings
-" set statusline+=%#warningmsg#
-" set statusline+=%{SyntasticStatuslineFlag()}
-" set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1

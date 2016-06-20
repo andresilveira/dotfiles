@@ -6,6 +6,7 @@
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.racketrc: racketrc
+    ~/.eslintrc.json: eslintrc.json
     ~/.gemrc: gemrc
     ~/.tmux.conf: tmux.conf
     ~/.gitignore_global: gitignore_global

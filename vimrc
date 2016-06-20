@@ -126,7 +126,7 @@ set backspace=indent,eol,start
 " useful when using the ctrl-p plugin to not have unrelated files in the three
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*
 " Clear CtrlP cache with cc (the same as F5, just easier)
-map cc :CtrlPClearCache<ENTER>
+map clc :CtrlPClearCache<ENTER>
 
 " Enables mustache/handlebars abbreviations
 let g:mustache_abbreviations = 1

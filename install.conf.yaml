@@ -26,6 +26,7 @@
   - [brew install tmux, Installing Tmux]
   - [brew install watchman, Installing Watchman]
   - [brew install vim --with-lua, Installing latest Vim with Lua enabled]
+  - [brew install tidy-html, Installing TidyHTML5 for nice HTML syntax checking]
   - ['sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', Installing oh-my-zsh]
   - [vim +PluginInstall +qall, Installing Vundle Plugins]
   - [git config --global core.excludesfile ~/.gitignore_global, Add global gitignore file]

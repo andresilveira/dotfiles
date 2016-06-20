@@ -142,6 +142,7 @@ let g:syntastic_check_on_wq = 0
 
 " Enabling syntastic checkers
 let g:syntastic_javascript_checkers = ['eslint']
+let g:syntastic_html_tidy_exec = 'tidy5'
 
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0

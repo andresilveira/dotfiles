@@ -30,3 +30,6 @@
   - ['sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', Installing oh-my-zsh]
   - [vim +PluginInstall +qall, Installing Vundle Plugins]
   - [git config --global core.excludesfile ~/.gitignore_global, Add global gitignore file]
+
+# if you have problems with different PATH variables between vim and command line, run:
+# sudo chmod ugo-x /usr/libexec/path_helper

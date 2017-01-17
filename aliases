@@ -1,3 +1,4 @@
 # check if the GitHub Desktop app is installed and creates an alias for it
 [[ -d "/Applications/GitHub Desktop.app/" ]] && alias gitb="open -a GitHub\ Desktop"
 alias gith=github
+alias rubocop-git=git status --porcelain | grep -v "D " | cut -c4- | grep "\.rb" | xargs rubocop

@@ -3,6 +3,7 @@
 - link:
     ~/.dotfiles: ''
     ~/.zshrc: zshrc
+    ~/.atom: atom/
     ~/.vim: vim/
     ~/.vimrc: vimrc
     ~/.racketrc: racketrc
@@ -18,6 +19,7 @@
   - [brew analytics off, Disabling Homebrew's Analytics]
   - [brew install caskroom/cask/brew-cask, Installing Brew Cask]
   - [brew cask install iterm2]
+  - [brew cask install atom]
   - [brew cask install github-desktop]
   - [brew cask install racket]
   - [brew install zsh, Installing zsh]

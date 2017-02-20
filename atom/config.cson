@@ -1,0 +1,40 @@
+"*":
+  "atom-beautify":
+    general:
+      _analyticsUserId: "e2b016c2-551e-4c3b-be24-c09f5ac2c177"
+  core:
+    disabledPackages: [
+      "linter-rubocop"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 15
+    invisibles: {}
+    preferredLineLength: 120
+    showInvisibles: true
+  "exception-reporting":
+    userId: "2c3f46ef-e0de-66e7-9f1f-f5a1bcf42c6b"
+  "git-plus":
+    general:
+      _analyticsUserId: "90c4db3d-68e7-4dfd-bb32-2a622db69efd"
+  linter:
+    errorPanelHeight: 25
+  "linter-eslint":
+    useGlobalEslint: true
+  "linter-rubocop":
+    command: "/usr/local/bin/rubocop"
+    disableWhenNoConfigFile: true
+  "spell-check": {}
+  welcome:
+    showOnStartup: false
+  whitespace:
+    ignoreWhitespaceOnCurrentLine: false
+".coffee.jsx.source":
+  editor:
+    preferredLineLength: 120
+".diff":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120

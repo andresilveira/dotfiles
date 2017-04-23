@@ -23,6 +23,7 @@
   - [brew cask install atom]
   - [brew cask install github-desktop]
   - [brew cask install racket]
+  - [brew install elixir]
   - [brew install zsh, Installing zsh]
   - [brew install vim, Installing Vim via Homebrew]
   - [brew install npm, Installing NPM]

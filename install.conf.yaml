@@ -23,6 +23,7 @@
   - [brew cask install atom, Installing Atom]
   - [brew cask install github-desktop, Installing GitHub app]
   - [brew cask install racket, Installing Racket]
+  - [brew cask install docker, Installing Docker app]
   - [brew cask install skype, Installing Skype]
   - [brew install elixir]
   - [brew install zsh, Installing zsh]

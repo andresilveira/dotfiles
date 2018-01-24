@@ -54,7 +54,7 @@ filetype plugin indent on    " required
 " Enabling solarized
 syntax enable
 set background=dark
-colorscheme solarized
+" colorscheme solarized
 
 " Show line numbers
 set number

@@ -3,13 +3,10 @@
 - link:
     ~/.dotfiles: ''
     ~/.zshrc: zshrc
-    ~/.atom: atom/
     ~/.vim: vim/
     ~/.vimrc: vimrc
-    ~/.racketrc: racketrc
     ~/.eslintrc.json: eslintrc.json
     ~/.gemrc: gemrc
-    ~/.tmux.conf: tmux.conf
     ~/.gitignore_global: gitignore_global
     ~/.aliases: aliases
 
@@ -22,18 +19,13 @@
   - [brew cask install iterm2, Installing iterm2]
   - [brew cask install atom, Installing Atom]
   - [brew cask install github-desktop, Installing GitHub app]
-  - [brew cask install racket, Installing Racket]
-  - [brew cask install docker, Installing Docker app]
   - [brew cask install skype, Installing Skype]
   - [brew install elixir]
+  - ['\curl -sSL https://raw.githubusercontent.com/taylor/kiex/master/install | bash -s', Installing Elixir manager]
   - [brew install zsh, Installing zsh]
   - [brew install vim, Installing Vim via Homebrew]
-  - [brew install npm, Installing NPM]
   - [brew install yarn, Installing Yarn]
-  - [brew install tmux, Installing Tmux]
-  - [brew install watchman, Installing Watchman]
   - [brew install vim --with-lua, Installing latest Vim with Lua enabled]
-  - [brew install tidy-html5, Installing TidyHTML5 for nice HTML syntax checking]
   - ['sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"', Installing oh-my-zsh]
   - ['git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim', Installing Vundle]
   - [vim +PluginInstall +qall, Installing Vundle Plugins]
